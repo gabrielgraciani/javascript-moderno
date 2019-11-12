@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<input type="text" id="soma1">
+<input type="text" id="soma2">
+
+<button onclick="Soma()">calcular</button>
+<input type="text" id="resultadoSoma">
+
+</body>
+<script>
+	function Soma(){
+		const valor1 = parseInt(document.getElementById('soma1').value);
+		const valor2 = parseInt(document.getElementById('soma2').value);
+		const resultado = valor1 + valor2;
+		
+		const campoResult = document.querySelector('#resultadoSoma');
+		campoResult.value = resultado;
+	}
+</script>
+</html>
